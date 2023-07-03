@@ -1,0 +1,19 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>CRUD_Operation</title>
+    <link rel="stylesheet" href = "{% static 'App/css/bootstrap.css' %}"/>
+</head>
+<body>
+    <div class="container mt-5">
+        <h2 class="text-center alert alert-danger">CRUD Project</h2>
+        {% block content %}
+    
+        {% endblock content %}
+    </div>
+    <script src="{% static 'App/js/bootstrap.js' %}" ></script>
+    <script src="{% static 'App/js/popper.js' %}" ></script>
+    <script src="{% static 'App/js/jquery.js' %}" ></script>
+</body>
+</html>
